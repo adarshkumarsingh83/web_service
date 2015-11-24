@@ -1,0 +1,5 @@
+valid get request
+http://localhost:8080/RESTEasyExceptionMapperDemo/rest/users/1
+
+invalid get request
+http://localhost:8080/RESTEasyExceptionMapperDemo/rest/users/abc

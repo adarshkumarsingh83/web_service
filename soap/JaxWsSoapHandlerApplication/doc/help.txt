@@ -1,0 +1,69 @@
+1.Step:build the project and make sure that all the .class file of the web service are present in the taget location
+2.step: open cmd prompt and execute this cmd
+C:\Windows\System32>wsgen -keep -verbose -cp D:\springws\JaxWsSoapHandlerApplication\target\classes\ com.adarsh.jaxws.ws.MyMessageWebServiceImpl -d D:\springws\JaxWsSoapHandlerApplication\src\main\java\
+
+warning: The apt tool and its associated API are planned to be
+removed in the next major JDK release.  These features have been
+superseded by javac and the standardized annotation processing API,
+javax.annotation.processing and javax.lang.model.  Users are
+recommended to migrate to the annotation processing features of
+javac; see the javac man page for more information.
+Note:   ap round: 1
+[ProcessedMethods Interface: com.adarsh.jaxws.ws.MyMessageWebService]
+[should process method: printMessage hasWebMethods: false ]
+[endpointReferencesInterface: true]
+[declaring class has WebSevice: true]
+[returning: true]
+[WrapperGen - method: printMessage()]
+[method.getDeclaringType(): com.adarsh.jaxws.ws.MyMessageWebService]
+[requestWrapper: com.adarsh.jaxws.ws.jaxws.PrintMessage]
+com\adarsh\jaxws\ws\jaxws\PrintMessage.java
+com\adarsh\jaxws\ws\jaxws\PrintMessageResponse.java
+Note:   ap round: 2
+
+C:\Windows\System32>
+
+C:\Windows\System32>cd D:\springws\JaxWsSoapHandlerApplication\src\main\java\
+
+C:\Windows\System32>d:
+
+D:\springws\JaxWsSoapHandlerApplication\src\main\java>tree/f
+Folder PATH listing for volume New Volume
+Volume serial number is 8AC3-3299
+D:.
+└───com
+    └───adarsh
+        └───jaxws
+            ├───handler
+            │       IpValidator.java
+            │
+            ├───publisher
+            │       WebServicePublisher.java
+            │
+            └───ws
+                │   MyMessageWebService.java
+                │   MyMessageWebServiceImpl.java
+                │
+                └───jaxws
+                        PrintMessage.java
+                        PrintMessage.class
+                        PrintMessageResponse.java
+                        PrintMessageResponse.class
+
+
+D:\springws\JaxWsSoapHandlerApplication\src\main\java>
+
+
+2.step:delete the .class file
+
+3.step: configure the application in glassfish server
+
+4.step:execute the publisher
+
+5.step:execute the glass fish server for web service
+
+6.step:hit the url for getting server
+  http://localhost:8080/JaxWsSoapHandlerApplication/validator
+
+7.step: hit the url for wsdl
+ http://localhost:8080/JaxWsSoapHandlerApplication/validator?wsdl
