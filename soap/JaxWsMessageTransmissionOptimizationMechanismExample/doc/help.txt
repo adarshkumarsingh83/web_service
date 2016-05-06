@@ -1,8 +1,0 @@
-configure the application in glassfish
-
-1.execute the publisher
-2.execute the server in glassfish
-3.execute the client
-
-serviceUrl=http://localhost:8080/JaxWsMessageTransmissionOptimizationMechanismExample/image
-wsdlUrl=http://localhost:8080/JaxWsMessageTransmissionOptimizationMechanismExample/image?wsdl

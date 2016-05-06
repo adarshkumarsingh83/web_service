@@ -1,7 +1,0 @@
-1.step: start the publisher
-2.step:configure the application into the gloassfish server and start it after the publisher
-2.step: type the following url in browser for service
-  http://localhost:8080/JaxWsAttachmentMtomFileExample/fileService
-
-3.step:type the following url in browser for wsdl
- http://localhost:8080/JaxWsAttachmentMtomFileExample/fileService?wsdl

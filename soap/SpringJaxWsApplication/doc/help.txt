@@ -1,9 +1,0 @@
-1.integrate in tomcat
-2.execute the application
-3.type into the browser
-  if intellj then http://localhost:9090/message
-  if tomcat directly http://localhost:9090/SpringJaxWsApplication/message
-
-4.get the wsdl doc
-  if intellj then http://localhost:9090/message?wsdl
-  if tomcat directly http://localhost:9090/SpringJaxWsApplication/message?wsdl
