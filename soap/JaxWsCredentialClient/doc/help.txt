@@ -1,0 +1,23 @@
+
+1.step:publish the web service
+
+2.step:execute the web service
+
+3.execute the cmd for generating stubs
+
+
+D:\springws\JaxWsCredentialClient\src\main\java
+c:>wsimport -keep http://localhost:8080/JaxWsCredentialServer/helloworld?wsdl -d D:\springws\JaxWsCredentialClient\src\main\java
+parsing WSDL...
+
+
+
+Generating code...
+
+
+Compiling code...
+
+
+C:\Windows\System32>
+
+

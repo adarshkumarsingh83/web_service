@@ -1,0 +1,110 @@
+
+=>go to the target folder of the intellj and run the following cmd to generated the dependent classes
+cd d:\springws\JaxWsDocumentExample\target\classes>
+
+=>Execute the following cmd
+d:\springws\JaxWsDocumentExample\target\classes>wsgen -keep -cp . com.adarsh.jaxws.ws.HelloWorldImpl
+
+warning: The apt tool and its associated API are planned to be
+removed in the next major JDK release.  These features have been
+superseded by javac and the standardized annotation processing API,
+javax.annotation.processing and javax.lang.model.  Users are
+recommended to migrate to the annotation processing features of
+javac; see the javac man page for more information.
+
+d:\springws\JaxWsDocumentExample\target\classes>
+
+d:\springws\JaxWsDocumentExample\target\classes>tree/f
+Folder PATH listing for volume New Volume
+Volume serial number is 8AC3-3299
+D:.
++---com
+    +---adarsh
+        +---jaxws
+            +---client
+            ¦       HelloWorldClient.class
+            ¦
+            +---endpoint
+            ¦       HelloWorldPublisher.class
+            ¦
+            +---ws
+                ¦   HelloWorld.class
+                ¦   HelloWorldImpl.class
+                ¦
+                +---jaxws
+                        GetHelloWorldAsString.class
+                        GetHelloWorldAsString.java
+                        GetHelloWorldAsStringResponse.class
+                        GetHelloWorldAsStringResponse.java
+
+
+d:\springws\JaxWsDocumentExample\target\classes>
+
+=>copy the generated java files into the project structure inside com.adarsh.jaxws.ws.jaxws dir
+------------------------------------------------------------------------------------------------------
+d:\springws\JaxWsDocumentExample\target\classes>xcopy com\adarsh\jaxws\ws\jaxws\*.java d:\springws\J
+axWsDocumentExample\src\main\java\com\adarsh\jaxws\ws\jaxws\
+com\adarsh\jaxws\ws\jaxws\GetHelloWorldAsString.java
+com\adarsh\jaxws\ws\jaxws\GetHelloWorldAsStringResponse.java
+2 File(s) copied
+
+d:\springws\JaxWsDocumentExample\target\classes>
+
+
+d:\springws\JaxWsDocumentExample>tree/f
+Folder PATH listing for volume New Volume
+Volume serial number is 8AC3-3299
+D:.
+¦   JaxWsDocumentExample.iml
+¦   pom.xml
++---src
+¦   +---main
+¦   ¦   +---java
+¦   ¦   ¦   +---com
+¦   ¦   ¦       +---adarsh
+¦   ¦   ¦           +---jaxws
+¦   ¦   ¦               +---client
+¦   ¦   ¦               ¦       HelloWorldClient.java
+¦   ¦   ¦               +---endpoint
+¦   ¦   ¦               ¦       HelloWorldPublisher.java
+¦   ¦   ¦               +---ws
+¦   ¦   ¦                   ¦   HelloWorld.java
+¦   ¦   ¦                   ¦   HelloWorldImpl.java
+¦   ¦   ¦                   +---jaxws
+¦   ¦   ¦                           GetHelloWorldAsString.java
+¦   ¦   ¦                           GetHelloWorldAsStringResponse.java
+¦   ¦   +---resources
+¦   ¦   +---webapp
+¦   +---test
+¦       +---java
++---target
+    +---classes
+    ¦   +---com
+    ¦       +---adarsh
+    ¦           +---jaxws
+    ¦               +---client
+    ¦               ¦       HelloWorldClient.class
+    ¦               +---endpoint
+    ¦               ¦       HelloWorldPublisher.class
+    ¦               +---ws
+    ¦                   ¦   HelloWorld.class
+    ¦                   ¦   HelloWorldImpl.class
+    ¦                   +---jaxws
+    ¦                           GetHelloWorldAsString.class
+    ¦                           GetHelloWorldAsString.java
+    ¦                           GetHelloWorldAsStringResponse.class
+    ¦                           GetHelloWorldAsStringResponse.java
+    +---generated-sources
+        +---annotations
+
+d:\springws\JaxWsDocumentExample>
+
+
+1.add the application in glassfish server
+2.execute the publisher first
+3.execute in the glassfish server
+2.http://localhost:8080/JaxWsDocumentExample/hello
+3.http://localhost:8080/JaxWsDocumentExample/hello?wsdl
+
+
+

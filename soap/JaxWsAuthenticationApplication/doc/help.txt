@@ -1,0 +1,10 @@
+intellj
+-----------------------
+http://localhost:9090/hello
+http://localhost:9090/hello?wsdl
+
+
+webServer
+----------------------
+http://localhost:9090/JaxWsAuthenticationApplication/hello
+http://localhost:9090/JaxWsAuthenticationApplication/hello?wsdl

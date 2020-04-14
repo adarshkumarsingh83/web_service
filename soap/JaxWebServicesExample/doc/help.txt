@@ -1,0 +1,10 @@
+in intellj
+------------------------
+http://localhost:9090/hello
+http://localhost:9090/hello?wsdl
+
+
+in web server
+------------------------
+http://localhost:9090/JaxWebServicesExample/hello
+http://localhost:9090/JaxWebServicesExample/hello?wsdl
