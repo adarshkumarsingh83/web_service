@@ -14,7 +14,7 @@
         <spring-security.version>3.0.7.RELEASE</spring-security.version>
         <aspectj.version>1.6.12</aspectj.version>
         <jars.dir>${project.basedir}/jars</jars.dir>
-        <cxf.version>2.5.2</cxf.version>
+        <cxf.version>2.6.11</cxf.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
