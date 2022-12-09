@@ -10,7 +10,7 @@
     <packaging>war</packaging>
 
      <properties>
-        <spring.version>3.0.7.RELEASE</spring.version>
+        <spring.version>6.0.0</spring.version>
         <spring-security.version>3.0.7.RELEASE</spring-security.version>
         <aspectj.version>1.6.12</aspectj.version>
         <jars.dir>${project.basedir}/jars</jars.dir>
